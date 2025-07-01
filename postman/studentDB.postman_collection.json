@@ -7,13 +7,13 @@
 	},
 	"item": [
 		{
-			"name": "Create student(POST)",
+			"name": "Get all students (POST)",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"firstName\": \"Ayomikun\",\r\n   \"lastName\": \"Obamide\",\r\n   \"email\": \"toheebolawale@gmail.com\",\r\n   \"age\": 23\r\n}",
+					"raw": "{\r\n    \"firstName\": \"Solomon\",\r\n    \"lastName\": \"Adeniji\",\r\n    \"email\": \"tosefpurity@gmail.com\",\r\n    \"age\": 18\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,12 +21,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/students",
+					"raw": "http://localhost:4050/students",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "4050",
 					"path": [
 						"students"
 					]
@@ -35,29 +35,31 @@
 			"response": []
 		},
 		{
-			"name": "Get All students (GET)",
+			"name": "Get all students (GET)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3000/students?page=1&limit=5",
+					"raw": "http://localhost:4050/students",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "4050",
 					"path": [
 						"students"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
-						},
-						{
-							"key": "limit",
-							"value": "5"
-						}
 					]
 				}
 			},
@@ -69,17 +71,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/count",
+					"raw": "http://localhost:4050/students/count",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "4050",
 					"path": [
 						"students",
 						"count"
 					]
-				}
+				},
+				"description": "does a count of all the students present in the database"
 			},
 			"response": []
 		},
@@ -89,12 +92,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/68615f3704dee875a8f36ca6",
+					"raw": "http://localhost:4050/students/68615f3704dee875a8f36ca6",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "4050",
 					"path": [
 						"students",
 						"68615f3704dee875a8f36ca6"
@@ -110,7 +113,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"firstName\": \"Raphael\",\r\n   \"lastName\": \"Sunday\",\r\n   \"email\": \"sundayraphie@gmail.com\",\r\n   \"age\": 50\r\n}",
+					"raw": "{\r\n   \"firstName\": \"Raphael\",\r\n   \"lastName\": \"Sunday\",\r\n   \"email\": \"sundayraphaaaeeel@gmail.com\",\r\n   \"age\": 21\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -118,12 +121,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/students/6861768804dee875a8f36cbc",
+					"raw": "http://localhost:4050/students/6861768804dee875a8f36cbc",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "4050",
 					"path": [
 						"students",
 						"6861768804dee875a8f36cbc"
@@ -138,17 +141,18 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/686180a972116fba8acb8e9c",
+					"raw": "http://localhost:4050/students/6863b08dbf33743ede147128",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "4050",
 					"path": [
 						"students",
-						"686180a972116fba8acb8e9c"
+						"6863b08dbf33743ede147128"
 					]
-				}
+				},
+				"description": "deletes student data by id"
 			},
 			"response": []
 		}

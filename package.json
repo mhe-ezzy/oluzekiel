@@ -1,9 +1,9 @@
 {
   "name": "assessment-1",
   "version": "1.0.0",
-  "main": "App.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon App.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",

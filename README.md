@@ -11,14 +11,14 @@ This is a simple RESTful CRUD service for managing student records using MongoDB
 
 ## Endpoints
 
-| Method | Endpoint         | Description               |
-|--------|------------------|---------------------------|
-| POST   | `/students`      | Create a new student      |
-| GET    | `/students`      | Get all students          |
+| Method | Endpoint         | Description                  |
+|--------|------------------|------------------------------|
+| POST   | `/students`      | Create a new student         |
+| GET    | `/students`      | Get all students             |
 | GET    | `/students/count`| Get total number of students |
-| GET    | `/students/:id`  | Get student by ID         |
-| PUT    | `/students/:id`  | Update student by ID      |
-| DELETE | `/students/:id`  | Delete student by ID      |
+| GET    | `/students/:id`  | Get student by ID            |
+| PUT    | `/students/:id`  | Update student by ID         |
+| DELETE | `/students/:id`  | Delete student by ID         |
 
 
 

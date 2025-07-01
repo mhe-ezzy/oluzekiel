@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 
 
 const studentRoutes = require('./routes/studentRoutes');
-const errorHandler = require('./errorHandler');
+const errorHandler = require('./middleware/errorHandler');
 
 dotenv.config();
 
@@ -21,8 +21,8 @@ app.use(errorHandler);
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to MongoDB');
-    app.listen(process.env.PORT || 3000, () => {
-      console.log(`Server running on port ${process.env.PORT || 3000}`);
+    app.listen(process.env.PORT || 4050, () => {
+      console.log(`Server running on port ${process.env.PORT || 4050}`);
     });
   })
   .catch(err => {
